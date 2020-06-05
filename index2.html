@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        let comp=["rock","scissor","paper"];
+        function comPlay()
+        {
+            return comp[(Math.floor(Math.random()*comp.length))];
+        }   
+        let playScore=0;
+        let compScore=0;
+        function playRound(playSelection,compSelection){
+if(playSelection===compSelection){
+    return `it's tie ${playSelection}=${compSelection}`;
+}
+else if(((compSelection==="rock")&&(playSelection==="scissor"))||((compSelection==="paper")&&(playSelection==="rock"))||((compSelection==="scissor")&&(playSelection==="rock"))){
+    compScore++;
+    return `You lose ${compSelection}:${playSelection}`;
+    
+}
+else{
+    playScore++;
+    return `You win ${compSelection}:${playSelection}`;
+    
+}
+       
+}
+let numOfRound=prompt("Number of Rounds,4");
+function game(numOfRound){
+for(let i=0; i<numOfRound;i++)
+{
+       
+        const compSelection=comPlay();
+        let playSelection=prompt("Enter rock,scissor,paper").toLowerCase(); 
+        console.log(`Round ${i+1}:`, playRound(playSelection, compSelection));
+      
+        if (playScore === 3) {
+        console.log('Player score: ', playScore);
+        console.log('Computer score: ', compScore);
+        console.log('You win!')
+    } else if (compScore === 3) {
+        console.log('Player score: ', playScore);
+        console.log('Computer score: ', compScore);
+        console.log('You lose.');
+    }
+}
+}
+    game(numOfRound);
+
+    </script>
+</body>
+</html>

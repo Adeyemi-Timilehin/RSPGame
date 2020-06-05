@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Welcome to RSP Game</h2>
+        <h4>Make decision on playing this game</h4>
+   <div class="playMygame">
+            <form class="myForm">
+                <h3>How many rounds do you want to play</h3>
+                <div id="number">
+                    <label for="Numberr">Choose round(1-8)<input id="Number" type="number" min="1" max="8" required /></label>
+                </div>
+            </form> 
+            <button class="play">Play</button>
+        </div>
+        <div class="option">
+            <button class="cards" id="rock">ROCK</button>
+            <button class="cards" id="paper">PAPER</button>
+            <button class="cards" id="Scissor">SCISSOR</button>
+        </div>
+        <div class="finalResult">
+          <p class="count hide"></p>
+            <p class="result"></p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/*  *{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    box-sizing: border-box;
+
+}
+#container{
+    background-color: #001241;
+    opacity: 0.9;
+    text-align: center;
+    margin: 5%;
+    outline: 4px solid #864282;
+}
+h2{
+    color: #fd23ed;
+    padding: 3%;
+}
+h4{
+    font-size: 24px;
+    padding-top: 3%;
+    font-weight: 200;
+    background: linear-gradient(-45deg, #864282,#eeeeee);
+    color: #ffffff;
+    width: 50%;
+    height: 7%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+p.counter{
+    margin-top: -8%;
+    font-size: 12px;
+}
+@media (max-width:400px){
+    h4{height: 10%;
+    width: 60%;
+    }
+}
+.myForm{
+    font-size: 16px;
+    padding:10px;
+    color: cornsilk;
+    background:linear-gradient(25deg,#882399,#4548b3)
+}
+.play{
+    width: 15%;
+    height: 5%;
+    border-radius: 2px;
+    margin: 3%;
+    font-size: 18px;
+    text-align: center;
+    background-color: #864282;
+    color: #eeeeee;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.cards{
+    width: 7%;
+    height: 5%;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0 10px;
+    color: #def;
+    background-color: #235498;
+}
+.finalResult{
+    width: 20%;
+    height: 10%;
+    box-shadow: inset 5px 5px 10px -6px rgba(3,3,3,0.68);
+    margin-left: 40%;
+    margin-top: 4%;
+    background-color:white ;
+    border-radius: 4px;
+    display: block;
+}  
+
+.hide {
+  color: aliceblue;
+} 
+ @media (max-width:375px){
+    .cards{
+        width: 25%;
+        padding:4px;
+        margin:auto;
+    }
+    #finalResult{
+        width: 50%;
+        height: 7%;
+        margin-left: 25%;
+    }
+}  */
